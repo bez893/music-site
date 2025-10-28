@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <section id="landing">
+      <div class="landing-content">
+        <h1>Discover Music</h1>
+        <p>Find your favorite tracks easily</p>
+        <button id="startBtn">Start Searching</button>
+      </div>
+    </section>
+
+    <!-- Main Page -->
+    <div id="main-page" class="hidden">
+      <nav class="top-nav">
+        <a class="logo" href="#"
+          ><span class="music-icon">&#127925;</span> music search</a
+        >
+        <form id="form" role="search">
+          <input
+            type="search"
+            id="query"
+            name="q"
+            placeholder="Search music..."
+            required
+          />
+        </form>
+      </nav>
+
+      <main id="main-content">
+        <div id="loading" class="hidden">Loading...</div>
+        <button id="playAllBtn" class="hidden">Play All Previews</button>
+        <section id="section"></section>
+      </main>
+
+      <footer>
+        <p>Music Search App &copy; 2025</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
